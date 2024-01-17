@@ -1,0 +1,90 @@
+.tub {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 92px;
+  padding-top: 71px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__list-link {
+  color: #7D7D7D;
+  font-family: "Playfair Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: color 0.3s linear;
+}
+
+.menu__list-link:hover {
+  color: #03A9F4;
+}
+
+.content1, .content2 {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  padding-bottom: 130px;
+}
+
+.content3 {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  padding-bottom: 90px;
+}
+
+.fx {
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text {
+  color: #B4AD9E;
+  font-family: "Ubuntu";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-top: 62px;
+  padding-bottom: 32px;
+}
+
+p {
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button {
+  color: #7D7D7D;
+  font-family: Playfair Display;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 21px 49px;
+  background-color: transparent;
+  border: 1px solid #7D7D7D;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */
