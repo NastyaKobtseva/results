@@ -1,10 +1,3 @@
-.tub {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 92px;
-  padding-top: 71px;
-}
-
 li {
   list-style: none;
 }
@@ -13,41 +6,37 @@ a {
   text-decoration: none;
 }
 
-.content-all {
+.header .tub {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 92px;
+  padding-top: 71px;
 }
-
-.menu__list-link {
+.header .menu__list-link {
   color: #7D7D7D;
   font-family: "Playfair Display";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  transition: color 0.3s linear;
+  transition: color 0.3s ease;
 }
-
-.menu__list-link:hover {
+.header .menu__list-link:hover {
   color: #03A9F4;
 }
 
-.content1, .content2 {
+.all .content-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all .content1, .all .content2 {
   display: flex;
   justify-content: center;
   gap: 65px;
   padding-bottom: 130px;
 }
-
-.content3 {
-  display: flex;
-  justify-content: center;
-  gap: 65px;
-  padding-bottom: 90px;
-}
-
-.fx {
+.all .content1 .fx, .all .content2 .fx {
   color: #626262;
   font-family: "Playfair Display";
   font-size: 30px;
@@ -55,8 +44,7 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
-.text {
+.all .content1 .text, .all .content2 .text {
   color: #B4AD9E;
   font-family: "Ubuntu";
   font-size: 14px;
@@ -66,8 +54,7 @@ a {
   padding-top: 62px;
   padding-bottom: 32px;
 }
-
-p {
+.all .content1 .text2, .all .content2 .text2 {
   color: #626262;
   font-family: "Playfair Display";
   font-size: 14px;
@@ -75,16 +62,54 @@ p {
   font-weight: 400;
   line-height: normal;
 }
-
-.button {
+.all .content3 {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  padding-bottom: 90px;
+}
+.all .content3 .fx {
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.all .content3 .text {
+  color: #B4AD9E;
+  font-family: "Ubuntu";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-top: 62px;
+  padding-bottom: 32px;
+}
+.all .content3 .text2 {
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.all .button {
   color: #7D7D7D;
-  font-family: Playfair Display;
+  font-family: "Playfair Display";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding: 21px 49px;
   background-color: transparent;
+  margin-bottom: 30px;
   border: 1px solid #7D7D7D;
   cursor: pointer;
+  transition: transform 0.3s linear, color 0.3s ease, border 0.3s ease;
+}
+.all .button:hover {
+  color: #03A9F4;
+  border: 1px solid #03A9F4;
+  transform: scale(1.2);
 }/*# sourceMappingURL=styles.css.map */
