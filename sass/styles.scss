@@ -3,6 +3,17 @@ $color-text-blue: #03A9F4;
 $color-text-gray: #B4AD9E;
 $color-text-gray-two: #626262;
 
+%columb-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex () {
+    display: flex;
+    justify-content: space-around;
+}
+
 li {
     list-style: none;
 }
@@ -12,8 +23,7 @@ a {
 
 .header {
     .tub {
-        display: flex;
-        justify-content: space-around;
+        @include flex(flex, space-around);
         padding-bottom: 92px;
         padding-top: 71px;
     }
@@ -33,13 +43,10 @@ a {
 
 .all {
     .content-all {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %columb-flex;
     }
     .content1, .content2 {
-        display: flex;
-        justify-content: center;
+        @include flex(flex, center);
         gap: 65px;
         padding-bottom: 130px;
         .fx {
@@ -71,8 +78,7 @@ a {
         }
     }
     .content3 {
-        display: flex;
-        justify-content: center;
+        @include flex(flex, center);
         gap: 65px;
         padding-bottom: 90px;
         .fx {
